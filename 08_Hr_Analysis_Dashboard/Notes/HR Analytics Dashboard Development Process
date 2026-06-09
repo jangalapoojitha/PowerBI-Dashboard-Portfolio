@@ -1,0 +1,211 @@
+# HR Analytics Dashboard Development Process
+
+## Project Overview
+
+The HR Analytics Dashboard was developed in Power BI to analyze employee workforce data and generate insights related to employee demographics, job roles, salary distribution, hiring trends, and leave management.
+
+The dashboard enables HR teams and management to monitor workforce composition and make informed decisions using interactive visualizations.
+
+---
+
+## Step 1: Data Collection
+
+The employee dataset was imported from an Excel file containing employee details such as:
+
+* Employee ID
+* Employee Name
+* Gender
+* Age
+* Education Qualification
+* Job Title
+* Salary
+* Date of Joining
+* Leave Balance
+
+The dataset served as the primary source for workforce analysis.
+
+---
+
+## Step 2: Data Cleaning and Preparation
+
+Power Query Editor was used to prepare the dataset before analysis.
+
+### Transformations Performed
+
+* Verified data types for all columns.
+* Removed duplicate records.
+* Checked for missing or null values.
+* Standardized column names.
+* Formatted date fields correctly.
+* Validated salary and leave balance values.
+
+These transformations improved data quality and ensured accurate reporting.
+
+---
+
+## Step 3: Data Modeling
+
+The cleaned dataset was loaded into Power BI Data Model.
+
+### Modeling Activities
+
+* Established relationships between tables where required.
+* Created calculated fields and measures using DAX.
+* Organized data into a structured format for reporting.
+
+This model provided the foundation for efficient analysis and visualization.
+
+---
+
+## Step 4: Dashboard Development
+
+Multiple visualizations were created to analyze workforce characteristics and employee metrics.
+
+### Head Count by Job Title
+
+A horizontal bar chart was created to display the number of employees in each job role.
+
+**Insight:**
+
+* Identifies departments and job roles with higher workforce concentration.
+* Helps understand workforce distribution across positions.
+
+---
+
+### Employee Salary Table
+
+A tabular visual was created displaying:
+
+* Employee ID
+* Employee Name
+* Job Title
+* Salary
+
+**Insight:**
+
+* Enables salary comparison across employees and roles.
+* Supports compensation analysis.
+
+---
+
+### Head Count by Gender
+
+A pie chart was used to visualize gender distribution.
+
+**Insight:**
+
+* Measures workforce diversity.
+* Helps HR monitor gender representation within the organization.
+
+---
+
+### Head Count by Age Group and Gender
+
+A clustered column chart was created using age bins and gender.
+
+**Insight:**
+
+* Analyzes workforce age demographics.
+* Identifies dominant age groups across genders.
+* Supports succession and workforce planning.
+
+---
+
+### Employee Joining Trend by Year
+
+A line chart was created to display employee headcount based on joining year.
+
+**Insight:**
+
+* Highlights recruitment trends over time.
+* Identifies periods of high and low hiring activity.
+
+---
+
+### Average Leave Balance by Job Title
+
+A bar chart was created to analyze average leave balance across job roles.
+
+**Insight:**
+
+* Identifies departments with higher unused leave balances.
+* Supports leave management and workforce planning.
+
+---
+
+## Step 5: DAX Calculations
+
+Several measures were created using DAX to support dashboard analysis.
+
+### Sample Measures
+
+#### Employee Count
+
+```DAX
+Employee Count = COUNT(data[Emp ID])
+```
+
+#### Average Salary
+
+```DAX
+Average Salary = AVERAGE(data[Salary])
+```
+
+#### Average Leave Balance
+
+```DAX
+Average Leave Balance = AVERAGE(data[Leave Balance])
+```
+
+These measures dynamically update based on report filters and user interactions.
+
+---
+
+## Step 6: Dashboard Design
+
+The dashboard was designed using Power BI best practices:
+
+* Consistent color palette.
+* Clear visual hierarchy.
+* Interactive filtering capabilities.
+* Appropriate chart selection for each metric.
+* Readable labels and titles.
+
+The design ensures easy interpretation of HR metrics and trends.
+
+---
+
+## Key Business Insights
+
+* Workforce distribution varies significantly across job roles.
+* Gender representation can be monitored effectively.
+* Most employees belong to specific age groups.
+* Hiring activity shows clear trends across years.
+* Leave balance differs among departments and positions.
+* Salary information supports compensation and workforce analysis.
+
+---
+
+## Tools and Technologies Used
+
+* Power BI Desktop
+* Power Query
+* DAX (Data Analysis Expressions)
+* Microsoft Excel
+* Data Modeling
+
+---
+
+## Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* HR Data Analysis
+* Data Cleaning and Transformation
+* Dashboard Design
+* DAX Calculations
+* Data Visualization
+* Workforce Analytics
+* Business Intelligence Reporting
+
+The project demonstrates how Power BI can transform employee data into actionable business insights for HR decision-making.
